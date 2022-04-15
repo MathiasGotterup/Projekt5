@@ -217,7 +217,7 @@ h1  {
     margin-right: 10%;
     margin:auto;
   }
-  .bt1, .bt3, .bt5 {
+  .bt1, .bt3, .bt5, .bt2, .bt4, .bt6 {
     margin-left: 10%;
     margin-top: 0%;
 
@@ -229,9 +229,4 @@ h1  {
     height: auto;
     margin-left: 10%;
     margin: auto;
-  }
-  .bt2, .bt4, .bt6 {
-    margin-left: 10%;
-    margin-top: 0%;
-
   }
