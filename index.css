@@ -119,7 +119,7 @@ h1  {
   grid-gap: 20px;
   padding: 10px;
   margin-top: 30px;
-  max-width: 100vw;
+  width: 100vw;
 }
 
 .produkt-container{
@@ -173,40 +173,65 @@ h1  {
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin-left: 50%;
   margin: auto;
 }
 
 @media screen and (min-width: 750px){
-.produkt-container, .produkt-container2, .produkt-container3, .produkt-container4, .produkt-container5, .produkt-container6 {
-  background-color: #f3eeeb;
-  grid-gap: 20px;
-  padding: 40px;
-  margin-top: 30px;
-  max-width: 100vw;
-}
+  .produkt-container, .produkt-container2, .produkt-container3, .produkt-container4, .produkt-container5, .produkt-container6 {
+    background-color: #f3eeeb;
+    grid-gap: 20px;
+    padding: 40px;
+    margin-top: 30px;
+    max-width: 100vw;
+  }
 
-.produkt-container{
-  grid-template-areas:
-  'text1 picture1';
-}
-.produkt-container2{
-  grid-template-areas:
-  'picture2 text2';
-}
-.produkt-container3{
-  grid-template-areas:
-  'text3 picture3';
-}
-.produkt-container4{
-  grid-template-areas:
-  'picture4 text4';
-}
-.produkt-container5{
-  grid-template-areas:
-  'text5 picture5';
-}
-.produkt-container6{
-  grid-template-areas:
-  'picture6 text6';
-}
+  .produkt-container{
+    grid-template-areas:
+    'text1 picture1';
+  }
+  .produkt-container2{
+    grid-template-areas:
+    'picture2 text2';
+  }
+  .produkt-container3{
+    grid-template-areas:
+    'text3 picture3';
+  }
+  .produkt-container4{
+    grid-template-areas:
+    'picture4 text4';
+  }
+  .produkt-container5{
+    grid-template-areas:
+    'text5 picture5';
+  }
+  .produkt-container6{
+    grid-template-areas:
+    'picture6 text6';
+  }
+  .pt1 img, .pt3 img, .pt5 img{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 10%;
+    margin:auto;
+  }
+  .bt1, .bt3, .bt5 {
+    margin-left: 10%;
+    margin-top: 0%;
+
+  }
+  .pt2 img, .pt4 img, .pt6 img{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 10%;
+    margin: auto;
+  }
+  .bt2, .bt4, .bt6 {
+    margin-left: 10%;
+    margin-top: 0%;
+
+  }
