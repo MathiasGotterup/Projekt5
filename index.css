@@ -1,18 +1,101 @@
 /*Produkter - Amanda*/
 body{
   background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100vh;
 }
+h1  {
+  color:#376A3B;
+  font-family: 'lucida-sans-typewriter-bold-oblique', sans-serif;
+}
+/*grøn boks*/
 .infoboks{
   background-color: #507d54;
-  height: 50px;
+  height: 70px;
   width: 100vw;
   padding: 10px;
   margin-top: 10px;
 }
-.slideshow{
+/*slideshow*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  margin-top: 30px;
   background-color: #f3eeeb;
-  padding: 30px;
+  padding: 10px;
 }
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 50px;;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #376A3B;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: -20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*produkter*/
+
 .pt1 {grid-area: picture1;}
 .bt1 {grid-area: text1;}
 .pt2 {grid-area: picture2;}
@@ -26,113 +109,92 @@ body{
 .bt6 {grid-area: text6;}
 .pt6 {grid-area: picture6;}
 
+.produkt-container, .produkt-container2, .produkt-container3, .produkt-container4, .produkt-container5, .produkt-container6 {
+  background-color: #f3eeeb;
+  grid-gap: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  width: 100vw;
+}
+
 .produkt-container{
   display: grid;
   grid-template-areas:
   'text1'
   'picture1';
-  background-color: #f3eeeb;
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
-}
+  }
 
 .produkt-container2{
   display: grid;
   grid-template-areas:
   'text2'
   'picture2';
-  background-color: #f3eeeb;
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
+
 .produkt-container3{
   display: grid;
   grid-template-areas:
   'text3'
   'picture3';
-  background-color: #f3eeeb;
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
 .produkt-container4{
   display: grid;
   grid-template-areas:
   'text4'
   'picture4';
-  background-color: #f3eeeb;
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
 .produkt-container5{
   display: grid;
   grid-template-areas:
   'text5'
   'picture5';
-  background-color: #f3eeeb;
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
 .produkt-container6{
   display: grid;
   grid-template-areas:
   'text6'
   'picture6';
-  background-color: #f3eeeb;
+}
+
+.bt1, .bt2, .bt3, .bt4, .bt5, .bt6 {
+  font-family: serif;
+  color: #376A3B;
+  font-size: 35;
+  margin-left: 10px;
+
+}
+
+}
+@media screen and (min-width: 750px){
+.produkt-container, .produkt-container2, .produkt-container3, .produkt-container4, .produkt-container5, .produkt-container6 {
+  background-color: rgba(#ed6717, 1);
   grid-gap: 20px;
   padding: 10px;
   margin-top: 20px;
+
 }
-@media screen and (min-width: 750px){
-  .produkt-container{
-    grid-template-areas:
-    'text1 picture1';
-    background-color: rgba(#ed6717, 1);
-    grid-gap: 20px;
-    padding: 10px;
-    margin-top: 20px;
+
+.produkt-container{
+  grid-template-areas:
+  'text1 picture1';
 }
 .produkt-container2{
   grid-template-areas:
   'picture2 text2';
-  background-color: rgba(#ed6717, 1);
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
 .produkt-container3{
   grid-template-areas:
   'text3 picture3';
-  background-color: rgba(#ed6717, 1);
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
 .produkt-container4{
   grid-template-areas:
   'picture4 text4';
-  background-color: rgba(#ed6717, 1);
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
 .produkt-container5{
   grid-template-areas:
   'text5 picture5';
-  background-color: rgba(#ed6717, 1);
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
 .produkt-container6{
   grid-template-areas:
   'picture6 text6';
-  background-color: rgba(#ed6717, 1);
-  grid-gap: 20px;
-  padding: 10px;
-  margin-top: 20px;
 }
