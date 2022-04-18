@@ -1,0 +1,45 @@
+body{
+  background-color: #EBE2DC;
+  margin: 0%;
+  font-family: Lucida Sans Typewriter;
+  color: #376A3B;
+  height: 100%;
+  width: 100%;
+}
+.tekst {
+  color: #00454e;
+  text-align: center;
+}
+
+
+#info_tekst{
+  text-align: left;
+  max-width: 750px;
+}
+
+.info_billede{
+  width: 400px;
+  float: right;
+  margin-right: 150px;
+}
+
+#n {
+  width: 250px;
+  height: 20px;
+}
+
+#e {
+  width: 250px;
+  height: 20px;
+}
+
+#m {
+  width: 250px;
+}
+#tf {
+  width: 250px;
+    height: 20px;
+}
+#my_form {
+  text-align: center;
+}
