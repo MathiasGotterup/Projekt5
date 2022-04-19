@@ -3,14 +3,11 @@ body{
   margin: 0%;
   font-family: Lucida Sans Typewriter;
   color: #376A3B;
-  height: 100%;
-  width: 100%;
 }
 .tekst {
   color: #00454e;
   text-align: center;
 }
-
 
 #info_tekst{
   text-align: left;
@@ -38,8 +35,54 @@ body{
 }
 #tf {
   width: 250px;
-    height: 20px;
+  height: 20px;
 }
 #my_form {
   text-align: center;
+}
+
+
+.footer{
+  background-color: #376A3B;
+  color: white;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.krabbe{
+  width: 125px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+li{
+  list-style: none;
+}
+.footer-col{
+   width: 30%;
+   padding: 0 50px;
+   box-sizing: border-box;
+}
+.facebook{
+  width: 35px;
+  height: 35px;
+}
+
+.instagram{
+  width: 35px;
+  height: 35px;
+}
+
+.social-links{
+  margin-left: 10%;
+  padding: 10px;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
