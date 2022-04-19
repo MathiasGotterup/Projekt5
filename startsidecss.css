@@ -28,6 +28,9 @@ h1  {
   .fb-t {grid-area: text2;}
   .fo-t {grid-area: text3;}
   .fo-b {grid-area: picture3;}
+  .ig1  {grid-area: ig1;}
+  .ig2  {grid-area: ig2;}
+  .ig3  {grid-area: ig3;}
   
   .instagram, .facebook, .find-os, .instagrampc, .facebookpc, .find-ospc {
     background-color: #f3eeeb;
@@ -36,6 +39,7 @@ h1  {
     margin-top: 30px;
     width: 100%;
   }
+  
   
   .instagram{
     display: grid;
@@ -63,40 +67,46 @@ h1  {
     font-family: serif;
     color: #376A3B;
     font-size: 35;
-    margin: 20px;
   }
   
-  .ig-b, .fb-b ,.fo-b{
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    height: 2fr;
-    margin: auto;
-  }
+  .ig1, .ig2, .ig3{
+    width: 25%;
+    height: auto;
+    max-width: 250px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;}
+
+    #img-link{
+        text-decoration: none;
+    }
+    
   
   @media screen and (min-width: 750px){
-    .instagram, .facebookpc, .find-os {
+    .instagrampc, .facebookpc, .find-ospc {
       background-color: #f3eeeb;
       grid-gap: 20px;
       padding: 0%;
       margin-top: 30px;
-      
     }
   
-    .instagram{
+    .instagrampc{
       grid-template-areas:
-      'text1 picture1';
+      'text1'
+      'ig1 ig2 ig3';
+      text-align: center;
+      
     }
     .facebookpc{
       grid-template-areas: 
       'text2'
       'picture2';
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 0.3fr 1fr;
       text-align: center;
+      width: 100%;
       
     }
-    .find-os{
+    .find-ospc{
       grid-template-areas:
       'text3 picture3';
-    }
+    }}
