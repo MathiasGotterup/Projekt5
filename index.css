@@ -20,20 +20,20 @@ body{
   margin-right: 150px;
 }
 
-#n {
+#navn {
   width: 250px;
   height: 20px;
 }
 
-#e {
+#email {
   width: 250px;
   height: 20px;
 }
 
-#m {
+#besked {
   width: 250px;
 }
-#tf {
+#telefon {
   width: 250px;
   height: 20px;
 }

@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
-    <script src="kontakt.js" defer></script>
-    <title></title>
+    <title>Om os</title>
   </head>
   <body>
   <div class="info_container">
@@ -21,21 +20,26 @@
 <p> Du kan følge Butik Pulvis på facebook og instagram.</div></div>
   <br>
   <br><p class="tekst" id="kontakt">Kontaktformular:</p>
-  <form id="my_form">
-    <p><input id="n" placeholder="Navn" required /></p>
-    <p><input id="e" placeholder="E-mail" type="email" required /></p>
-    <p><input id="tf" placeholder="Telefon" type="tel" pattern="[0-9]{8}" required/></p>
+  <div id="my_form">
+  <form onsubmit="event.preventDefault(); validateForm()">
+
+    <p><input id="navn" placeholder="Navn" type="text">
+    <small class="error"></small></p>
+    <p><input id="email" placeholder="E-mail" type="email"><small class="error"></small> </p>
+    <p><input id="telefon" placeholder="Telefon" type="tel"></p>
     <textarea
-      id="m"
+      id="besked"
+      type="text"
       placeholder="Skriv din besked her"
       rows="10"
-      required
-    ></textarea>
+    ></textarea> <small class="error"></small>
     <p>
-      <input id="mybtn" type="submit" value="Send" />
-      <span id="status"></span>
+      <div class="center">
+      <input type="submit" value="Send"/>
+      <p id="Sendt"></p>
     </p>
   </form>
+    </div>
   <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
@@ -64,5 +68,6 @@
   	 	</div>
   	 </div>
   </footer>
+      <script src="kontakt.js"></script>
   </body>
 </html>
