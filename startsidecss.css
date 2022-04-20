@@ -3,7 +3,7 @@ body{margin: 0px;}
 h1  {color:#376A3B;font-family: sans-serif;padding: 10px;}
   
   /*boks under nav*/
-  .infoboks{
+.infoboks{
     background-color: #507d54;
     color: #FFFF;
     width: 100%;
@@ -13,10 +13,15 @@ h1  {color:#376A3B;font-family: sans-serif;padding: 10px;}
     letter-spacing: 5px;
     font-size: 15px;}
   /*grids for mobil*/
-
+  
   /*Instagram grid*/
   
-  
+.instagrampc{
+    display: grid;
+    grid-template-areas:
+    'text1 text1 text1'
+    'slideshow';
+text-align: center;}
   
   
   
@@ -25,6 +30,8 @@ h1  {color:#376A3B;font-family: sans-serif;padding: 10px;}
 /* pc grids*/
 
 /*produkt bokse for grid*/
+  .slideshow-container{grid-area: slideshow;}
+
   .ig-t {grid-area: text1;}
   #ig1  {grid-area: ig-b1;}
   #ig2  {grid-area: ig-b2;}
@@ -88,9 +95,7 @@ h1  {color:#376A3B;font-family: sans-serif;padding: 10px;}
       height: auto;
       padding-left: 17.15%;
       padding-bottom: 2%;}
-      
-
-
+    
     .fo-t{padding-left: 11.3%;}
 
     .find-ospc{
