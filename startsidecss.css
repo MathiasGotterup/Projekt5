@@ -34,6 +34,8 @@ h1  {
   .fo-b {grid-area: picture3;}
   .fo-t {grid-area: text3;}
   .fo-t2{grid-area: text32;}
+  .fo-some1{grid-area: fo-fb;}
+  .fo-some2{grid-area: fo-ig;}
   
   .instagram, .facebook, .find-os, .instagrampc, .facebookpc, .find-ospc {
     background-color: #f3eeeb;
@@ -109,16 +111,23 @@ h1  {
       width: 100%;
     }
 
-    .fo-b{
-      width: 5%;
+    #fo-b{
+      width: 95%;
       height: auto;
+      padding-left: 7.15%;
+      padding-bottom: 2%;
     }
+    .fo-t{
+      padding-left: 5%;
+    }
+    
 
     .find-ospc{
       grid-template-areas:
-      'text3 text3'
-      'picture3 text32';
+      'text3 text3 .'
+      'picture3 text32 .'
+      'fo-fb fo-fb fo-fb';
+      grid-template-columns: 1fr 0.5fr 1fr;
       
-      border-left: 5%;
-      border-right: 5%;
+      
     }}
