@@ -12,24 +12,35 @@ clearBesked();
   if(navnInput.value.length < 1) {
     console.log(errorFejl);
     errorFejl[0].innerText = "Navn kan ikke være tomt";
-    navnInput.classList.add("error-border")
+    navnInput.classList.add("error-border");
+    errorFlag = true;
 
   }
-  if(!emailIsValid(email.valid)) {
-    errorFejl[1].innerText = "Invalid Email";
-    navnInput.classList.add("error-border")
+  if(email.value.length < 1) {
+    errorFejl[1].innerText = "Skriv en gyldig Email";
+    email.classList.add("error-border");
+    errorFlag = true;
 }
+if (telefon.value.length < 1) {
+  errorFejl[2].innerText = "Skriv et telefonnummer"
+  telefon.classList.add("error-bordor");
+  errorFlag = true;
+}
+if (besked.value.length < 1) {
+  errorFejl[3].innerText = "Skriv en besked"
+  besked.classList.add("error-bordor");
+  errorFlag = true;
+  }
+
+if (!errorFlag){
+  sendt.innerText = "Den er modtaget";
+}
+
 }
 function clearBesked() {
-  for (var i = 0; i < errorFejl.length; i++) {
+  for (let i = 0; i < errorFejl.length; i++) {
     errorFejl[i].innerText = "";
   }
   navnInput.classList.remove("error-bordor")
   email.classList.remove("error-bordor")
-}
-
-function emailIsValid(email) {
-  let pattern = /\S+@\S+\.\S+/;
-  return pattern.test(email);
-
 }
