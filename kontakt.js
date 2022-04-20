@@ -26,6 +26,6 @@ function clearBesked() {
 }
 
 function emailIsValid(email) {
-  let
-
+  let pattern = /\S+@\S+\.\S+/;
+  return pattern.test(email);
 }
