@@ -35,6 +35,9 @@ if (besked.value.length < 1) {
 if (!errorFlag){
   sendt.innerText = "Den er modtaget";
 }
+else {
+  return false;
+}
 
 }
 function clearBesked() {
