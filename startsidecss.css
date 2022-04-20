@@ -118,6 +118,7 @@ h1  {
       grid-template-areas:
       'text3 text3'
       'picture3 text32';
-      padding-left: 5%;
-      padding-right: 15%;
+      
+      border-left: 5%;
+      border-right: 5%;
     }}
