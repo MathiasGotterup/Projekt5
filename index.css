@@ -41,7 +41,6 @@ body{
   text-align: center;
 }
 
-
 .footer{
   background-color: #376A3B;
   color: white;
@@ -52,8 +51,6 @@ body{
 
 .krabbe{
   width: 125px;
-  margin-top: 30px;
-  margin-left: 20px;
 }
 
 .row{
@@ -79,22 +76,12 @@ li{
   height: 35px;
 }
 
-.social-links{
-  margin-left: 10%;
-  padding: 10px;
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
 }
-}
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
-}
 }
