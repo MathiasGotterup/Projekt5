@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
+              <script src="kontakt.js" defer></script>
     <title>Om os</title>
   </head>
   <body>
@@ -21,11 +22,11 @@
   <br>
   <br><p class="tekst" id="kontakt">Kontaktformular:</p>
   <div id="my_form">
-  <form onsubmit="event.preventDefault(); validateForm()">
-
+    <form onsubmit="event.preventDefault(); validateForm()">
     <p><input id="navn" placeholder="Navn" type="text">
     <small class="error"></small></p>
-    <p><input id="email" placeholder="E-mail" type="email"><small class="error"></small> </p>
+    <p><input id="email" placeholder="E-mail" type="email">
+      <small class="error"></small> </p>
     <p><input id="telefon" placeholder="Telefon" type="tel"></p>
     <textarea
       id="besked"
@@ -38,8 +39,9 @@
       <input type="submit" value="Send"/>
       <p id="Sendt"></p>
     </p>
+  </div>
   </form>
-    </div>
+</div>
   <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
@@ -68,6 +70,5 @@
   	 	</div>
   	 </div>
   </footer>
-      <script src="kontakt.js"></script>
   </body>
 </html>

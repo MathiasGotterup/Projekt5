@@ -76,12 +76,11 @@ li{
   height: 35px;
 }
 
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-@media(max-width: 574px){
+@media(max-width: 600px){
   .footer-col{
     width: 100%;
+  }
+  .krabbe{
+        margin-left: 150%;
+  }
 }
