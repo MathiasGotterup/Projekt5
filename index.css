@@ -1,25 +1,46 @@
+body {
+  margin:0;
+  padding: 0;
+  width: 100%;
+
+}
+
 h1  {
   color:#376A3B;
-  font-family: sans-serif;
+  font-family: 'Cantarell', sans-serif;
   padding: 10px;
-}
+  font-size: 30px;
+  }
+
+h2  {
+  color:#376A3B;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 25px;
+  }
 
 /*boks under nav*/
 .infoboks{
   background-color: #507d54;
-  color: #FFFF;
-  width: 100vw;
-  padding: 2px;
+  width: 100%;
+  padding-bottom: 1px;
+  padding-top: 1px;
   text-align: center;
+}
+
+.infoboks p {
+  color: #FFFF;
   letter-spacing: 5px;
+  font-family: 'EB Garamond', serif;
   font-size: 15px;
-  }
+  margin-left: 5px;
+  margin-right: auto;
+}
 
 /* Slideshow container */
 * {box-sizing:border-box}
 .slideshow-container {
   max-width: 100vw;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background: #EBE2DC;
   margin-top: 20px;
@@ -34,7 +55,7 @@ h1  {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -119,7 +140,7 @@ h1  {
   grid-gap: 20px;
   padding: 10px;
   margin-top: 30px;
-  width: 100vw;
+  width: 100%;
 }
 
 .produkt-container{
@@ -162,10 +183,13 @@ h1  {
 }
 
 .bt1, .bt2, .bt3, .bt4, .bt5, .bt6 {
-  font-family: serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 770;
   color: #376A3B;
-  font-size: 35;
-  margin: 20px;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top:0;
 }
 
 .pt1 img, .pt2 img, .pt3 img, .pt4 img, .pt5 img, .pt6 img{
@@ -176,13 +200,71 @@ h1  {
   margin: auto;
 }
 
+.scrolldown {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scrolldown span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid #507D54;
+  border-right: 3px solid #507D54;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 3s infinite;
+}
+
+.scrolldown span:nth-child(2){
+  animation-delay: -0.4s
+}
+.scrolldown span:nth-child(3){
+  animation-delay: -0.6s
+}
+@keyframes animate {
+  0%
+  {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+
 @media screen and (min-width: 750px){
+  .infoboks {
+    font-size: 20px;
+  }
+  h1  {
+    color:#376A3B;
+    font-family: 'Cantarell', sans-serif;
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 30px;
+    }
+  h2  {
+    color:#376A3B;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 40px;
+    }
+
   .produkt-container, .produkt-container2, .produkt-container3, .produkt-container4, .produkt-container5, .produkt-container6 {
     background-color: #f3eeeb;
     grid-gap: 20px;
     padding: 40px;
     margin-top: 30px;
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   .produkt-container{
@@ -219,14 +301,20 @@ h1  {
   }
   .bt1, .bt3, .bt5, .bt2, .bt4, .bt6 {
     margin-left: 10%;
-    margin-top: 0%;
-
+    margin-top: 0;
+    font-size: 20px;
   }
-  .pt2 img, .pt4 img, .pt6 img{
+  .pt2 img, .pt4 img, .pt6 5img{
     display: block;
     width: 100%;
     max-width: 400px;
     height: auto;
     margin-left: 10%;
     margin: auto;
+  }
+  .scrolldown {
+    position: fixed;
+    top: 90%;
+    left: 97%;
+    transform: translate(-50%, -50%);
   }
