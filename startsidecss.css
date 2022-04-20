@@ -14,7 +14,7 @@ h1  {
   .infoboks{
     background-color: #507d54;
     color: #FFFF;
-    width: 100vw;
+    width: 100%;
     padding-top: 2px;
     padding-bottom: 2px;
     text-align: center;
@@ -24,13 +24,16 @@ h1  {
   /*produkt bokse*/
   .ig-b {grid-area: picture1;}
   .ig-t {grid-area: text1;}
-  .fb-b {grid-area: picture2;}
-  .fb-t {grid-area: text2;}
-  .fo-t {grid-area: text3;}
-  .fo-b {grid-area: picture3;}
   .ig1  {grid-area: ig1;}
   .ig2  {grid-area: ig2;}
   .ig3  {grid-area: ig3;}
+
+  .fb-b {grid-area: picture2;}
+  .fb-t {grid-area: text2;}
+
+  .fo-b {grid-area: picture3;}
+  .fo-t {grid-area: text3;}
+  .fo-t2{grid-area: text32;}
   
   .instagram, .facebook, .find-os, .instagrampc, .facebookpc, .find-ospc {
     background-color: #f3eeeb;
@@ -104,9 +107,17 @@ h1  {
       grid-template-rows: 0.3fr 1fr;
       text-align: center;
       width: 100%;
-      
     }
+
+    .fo-b{
+      width: 5%;
+      height: auto;
+    }
+
     .find-ospc{
       grid-template-areas:
-      'text3 picture3';
+      'text3 text3'
+      'picture3 text32';
+      padding-left: 5%;
+      padding-right: 15%;
     }}
