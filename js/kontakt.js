@@ -8,7 +8,7 @@ let errorFejl = document.querySelectorAll(".error");
 function validateForm() {
 
 clearBesked();
-
+let errorFlag = false;
   if(navnInput.value.length < 1) {
     console.log(errorFejl);
     errorFejl[0].innerText = "Navn kan ikke være tomt";
@@ -22,18 +22,18 @@ clearBesked();
     errorFlag = true;
 }
 if (telefon.value.length < 1) {
-  errorFejl[2].innerText = "Skriv et telefonnummer"
+  errorFejl[2].innerText = "Skriv et telefonnummer";
   telefon.classList.add("error-bordor");
   errorFlag = true;
 }
 if (besked.value.length < 1) {
-  errorFejl[3].innerText = "Skriv en besked"
+  errorFejl[3].innerText = "Skriv en besked";
   besked.classList.add("error-bordor");
   errorFlag = true;
   }
 
 if (!errorFlag){
-  sendt.innerText = "Den er modtaget";
+  sendt.innerText = "Den er sendt";
 }
 else {
   return false;
@@ -44,6 +44,6 @@ function clearBesked() {
   for (let i = 0; i < errorFejl.length; i++) {
     errorFejl[i].innerText = "";
   }
-  navnInput.classList.remove("error-bordor")
-  email.classList.remove("error-bordor")
+  navnInput.classList.remove("error-bordor");
+  email.classList.remove("error-bordor");
 }

@@ -128,7 +128,6 @@ a {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
@@ -551,7 +550,7 @@ h2  {
     margin-top: 0;
     font-size: 20px;
   }
-  .pt2 img, .pt4 img, .pt6 5img{
+  .pt2 img, .pt4 img, .pt6 img{
     display: block;
     width: 100%;
     max-width: 400px;
@@ -577,3 +576,58 @@ h2  {
     'pic3 pic4'
     'pic5 pic6';
     }
+}
+.velkommen {
+    display: flex;
+    justify-content: center;
+    font-size: 8rem;
+    align-items: center;
+    margin: auto;
+    top: 0%;
+    color: #000;
+}
+
+.btn {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    margin: 1rem;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.btn-pulvis:hover {
+    color: royalblue;
+}
+
+.btn-genbrug:hover {
+    color: #507D54;
+}
+
+.btn-pulvis {
+    width: auto;
+    height: auto;
+    font-size: 5rem;
+    margin: 1rem;
+    background-color: #F3EEEB;
+    border: none;
+    color: #000;
+    border-radius: 1rem;
+}
+
+.btn-genbrug {
+    width: auto;
+    height: auto;
+    font-size: 5rem;
+    margin: 1rem;
+    background-color: #F3EEEB;
+    border: none;
+    color: #000;
+    border-radius: 1rem;
+}
