@@ -2,9 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
         <link rel="stylesheet" href="style.css">
               <script src="js/kontakt.js" defer></script>
               <script src="js/navbar.js" defer></script>
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+              <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@1,700&display=swap" rel="stylesheet">
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+              <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+              <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <title>Om os</title>
   </head>
   <body>
@@ -35,7 +46,7 @@
     </div>
   <div class="info_container">
   <div> <img src="billeder/pulvis.jpg" alt="billede af pulvis" class="info_billede"> </div>
-  <div class="om_os"> <h2> Om os </h2></div>
+  <div id="om_os"> <h1> Om os </h1></div>
   <div id= "info_tekst">
 <p> Butik Pulvis har bevilling til køb og salg af brugte varer.</p>
 <p>Virksomheden ejes af Johnna og Christian Gøttsch Hansen i dag tale bare hedder hr og Fru Hansen.</p>
@@ -44,9 +55,9 @@
 
 <p>Er vi ikke selv i butikken er det vores fantastiske vikar Tom eller Iben der styrer butikken, mens vi som oftest er på markeder og antikmesser rundt om i landet.</p>
 
-<p> Du kan følge Butik Pulvis på facebook og instagram.</div></div>
-  <br>
-  <br><p class="tekst" id="kontakt">Kontaktformular:</p>
+<p> Du kan følge Butik Pulvis på facebook og instagram.</div>
+<br>
+  <p class="tekst" id="kontaktformular">Kontaktformular:</p>
   <div id="my_form">
     <form onsubmit="event.preventDefault(); validateForm()">
     <p><input id="navn" placeholder="Navn" type="text">
@@ -97,5 +108,6 @@
   	 	</div>
   	 </div>
   </footer>
+  </div>
   </body>
 </html>

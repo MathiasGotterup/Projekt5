@@ -1,22 +1,28 @@
 body{
   margin: 0%;
-  font-family: Lucida Sans Typewriter;
 }
-.tekst {
+.tekst{
   color: #00454e;
   text-align: center;
+  margin-top: 70px;
+}
+
+.info_container{
+  background-color: #F3EEEB;
 }
 
 #info_tekst{
-  margin-left: 20px;
+  margin-left: 70px;
   text-align: left;
   max-width: 750px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .info_billede{
-  width: 400px;
+  width: 390px;
   float: right;
-  margin-right: 150px;
+  margin-right: 20px;
 }
 
 #navn {
@@ -75,12 +81,18 @@ li{
   height: 35px;
 }
 
-@media(max-width: 600px){
+@media(max-width: 415px){
   .footer-col{
+    display: flex;
+    align-items: center;
     width: 100%;
   }
   .krabbe{
-        margin-left: 150%;
+        margin-left: 100%;
+  }
+  #kontaktformular {
+    color: #00454e;
+    text-align: center;
   }
 }
 
