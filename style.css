@@ -1,8 +1,6 @@
 body{
-  background-color: #EBE2DC;
   margin: 0%;
   font-family: Lucida Sans Typewriter;
-  color: #376A3B;
 }
 .tekst {
   color: #00454e;
@@ -10,6 +8,7 @@ body{
 }
 
 #info_tekst{
+  margin-left: 20px;
   text-align: left;
   max-width: 750px;
 }
@@ -151,7 +150,7 @@ a {
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 8rem;
+        top: 6rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
