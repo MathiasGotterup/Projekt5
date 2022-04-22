@@ -130,6 +130,7 @@ a {
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
+    z-index: 900;
 }
 
 .nav-menu {
@@ -236,6 +237,7 @@ h2  {
   position: relative;
   background: #EBE2DC;
   margin-top: 20px;
+  z-index: -999;
 }
 
 .mySlides {
