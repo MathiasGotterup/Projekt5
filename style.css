@@ -229,37 +229,6 @@ h2  {
   margin-right: auto;
 }
 
-h1  {
-  color:#376A3B;
-  font-family: 'Cantarell', sans-serif;
-  padding: 10px;
-  font-size: 30px;
-  }
-
-h2  {
-  color:#376A3B;
-  font-family: 'Cantarell', sans-serif;
-  font-size: 25px;
-  }
-
-/*boks under nav*/
-.infoboks{
-  background-color: #507d54;
-  width: 100%;
-  padding-bottom: 1px;
-  padding-top: 1px;
-  text-align: center;
-}
-
-.infoboks p {
-  color: #FFFF;
-  letter-spacing: 5px;
-  font-family: 'EB Garamond', serif;
-  font-size: 15px;
-  margin-left: 5px;
-  margin-right: auto;
-}
-
 /* Slideshow container */
 * {box-sizing:border-box}
 .slideshow-container {
@@ -582,7 +551,7 @@ h2  {
     margin-top: 0;
     font-size: 20px;
   }
-  .pt2 img, .pt4 img, .pt6 5img{
+  .pt2 img, .pt4 img, .pt6 img{
     display: block;
     width: 100%;
     max-width: 400px;
@@ -608,7 +577,7 @@ h2  {
     'pic3 pic4'
     'pic5 pic6';
     }
-
+}
 .velkommen {
     display: flex;
     justify-content: center;
@@ -841,7 +810,7 @@ h2  {
           font-size: 150%;
 
         }
-        .slideshow-container{
+        .slideshow-container-forside{
             display: none;
         }
         .find-os{
