@@ -1,3 +1,5 @@
+//Mathias 
+
 let navnInput = document.querySelector("#navn");
 let email = document.querySelector("#email");
 let telefon = document.querySelector("#telefon");
