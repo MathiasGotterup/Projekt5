@@ -18,6 +18,8 @@ body{
   max-width: 750px;
   font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #376A3B;
+
 }
 
 .info_billede{
@@ -861,4 +863,11 @@ h2  {
           grid-template-areas:
           'text3      text3'
           'picture3pc   text3-1-1';
-          }}
+          }
+        }
+        #clock{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: center;
+        font-size: 30px;
+      }

@@ -40,7 +40,6 @@ if (!errorFlag){
 else {
   return false;
 }
-
 }
 function clearBesked() {
   for (let i = 0; i < errorFejl.length; i++) {
