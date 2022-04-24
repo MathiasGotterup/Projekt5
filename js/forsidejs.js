@@ -48,7 +48,7 @@ function showSlides(n) {
     //Her ændres det nuværende slides dot class navn til "active" hvilket så findes i css og ændre prikkens farve
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  //index starter på 0 .length starter på 1. Her rettes så de 2 hele tiden er det samme sted
+  //index starter på 0 .length starter på 1. Her rettes så de 2 hele tiden er det samme sted 
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
