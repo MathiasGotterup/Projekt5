@@ -1,4 +1,4 @@
-//Mathias 
+//Mathias
 
 let navnInput = document.querySelector("#navn");
 let email = document.querySelector("#email");
@@ -25,12 +25,12 @@ let errorFlag = false;
 }
 if (telefon.value.length < 1) {
   errorFejl[2].innerText = "Skriv et telefonnummer";
-  telefon.classList.add("error-bordor");
+  telefon.classList.add("error-border");
   errorFlag = true;
 }
 if (besked.value.length < 1) {
   errorFejl[3].innerText = "Skriv en besked";
-  besked.classList.add("error-bordor");
+  besked.classList.add("error-border");
   errorFlag = true;
   }
 
@@ -46,6 +46,8 @@ function clearBesked() {
   for (let i = 0; i < errorFejl.length; i++) {
     errorFejl[i].innerText = "";
   }
-  navnInput.classList.remove("error-bordor");
-  email.classList.remove("error-bordor");
+  navnInput.classList.remove("error-border");
+  email.classList.remove("error-border");
+  besked.classList.remove("error-border");
+  telefon.classList.remove("error-border");
 }
