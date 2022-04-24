@@ -686,7 +686,7 @@ h2  {
   max-width: 300px;
   height: auto;}
 
-.prev, .next {
+.tilbage, .frem {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -700,25 +700,17 @@ h2  {
   border-radius: 3px 3px 3px 3px;
   user-select: none;}
 
-.next {
+.frem {
   right: 0;
   margin-right: 20px;
   border-radius: 3px 3px 3px 3px;}
 
-.prev:hover, .next:hover {
+.tilbage:hover, .frem:hover {
   background-color: rgba(0,0,0,0.8);}
 
-.numbertext1 {
-  color: #376A3B;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 8px 12px;
-  position: absolute;
-  top: auto;
-  margin-left: 1.5%;
-  opacity: 0%;}
 
-.dot {
+
+.prik {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -729,7 +721,7 @@ h2  {
   display: inline-block;
   transition: background-color 0.6s ease;}
 
-.active, .dot:hover {
+.active, .prik:hover {
   background-color: #376A3B;}
 
 .fade {

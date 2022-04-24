@@ -2,7 +2,7 @@
 // først definere vi variablen "slideIndex"
 let slideIndex = 1;
 
-//Funktion showSlides referes til slideIndex - funktionen defineres
+//Funktion showSlides referes til slideIndex - funktionen defineres med variablen
 showSlides(slideIndex);
 
 // her sættes en ny funktion "plusSlides" med parameteren "n" som er et udefineret tal
@@ -11,7 +11,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// I denne funktion sættes currentSlide til parameter verdien "n"
+// I denne funktion sætter currentSlide parameter verdien til "n"
 function currentSlide(n) {
   //slideIndex sættes til "n" værdi
   showSlides(slideIndex = n);
@@ -26,7 +26,7 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
 
   //Fortæller at variablen "dots" findes fra HTML classen "dot"
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName("prik");
 
   // Hvis n er større end slide.length (3) så skal slideIndex være = 1
   if (n > slides.length) {slideIndex = 1;}
